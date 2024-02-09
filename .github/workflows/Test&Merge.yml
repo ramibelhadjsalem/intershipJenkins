@@ -26,7 +26,7 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Test
-      run: dotnet test --configuration Release --no-build
+      run: dotnet test 
 
   merge:
     name: Merge if tests pass
@@ -40,8 +40,8 @@ jobs:
 
     - name: Merge to main
       run: |
-        git config --global user.email "ramibelhadjsalem@gmail.com"
-        git config --global user.name "ramibelhadjsalem"
+        git config --global user.email "$(git config user.email)"
+        git config --global user.name "$(git config user.name)"
         git fetch --all
         git checkout master
         git merge ${{ github.event.after }}
