@@ -32,7 +32,7 @@ namespace intershipJenkins.Api.Controllers
 
             var book = await _booksService.getById(id);
 
-            if (book is null)
+            if (book is not null)
             {
                 return NotFound();
             }
