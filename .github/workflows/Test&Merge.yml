@@ -3,7 +3,7 @@ name: Test and Merge
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   test:
@@ -43,6 +43,6 @@ jobs:
         git config --global user.email "ramibelhadjsalem@gmail.com"
         git config --global user.name "ramibelhadjsalem"
         git fetch --all
-        git checkout main
+        git checkout master
         git merge ${{ github.event.after }}
         git push
