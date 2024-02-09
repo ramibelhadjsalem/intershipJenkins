@@ -4,14 +4,14 @@
     "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Tests\\intershipJenkins.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Tests\\intershipJenkins.Tests.csproj": {
+    "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Tests\\intershipJenkins.Tests.csproj",
-        "projectName": "intershipJenkins.Tests",
-        "projectPath": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Tests\\intershipJenkins.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj",
+        "projectName": "intershipJenkins.Api",
+        "projectPath": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj",
         "packagesPath": "C:\\Users\\belha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Tests\\obj\\",
+        "outputPath": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\belha\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,89 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.23.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Tests\\intershipJenkins.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Tests\\intershipJenkins.Tests.csproj",
+        "projectName": "intershipJenkins.Tests",
+        "projectPath": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Tests\\intershipJenkins.Tests.csproj",
+        "packagesPath": "C:\\Users\\belha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\belha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj": {
+                "projectPath": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
