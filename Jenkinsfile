@@ -32,7 +32,7 @@ pipeline {
             steps {
                 // Run Docker container from the built image
                 script {
-                    dockerImage.run('-p 8089:80') 
+                    dockerImage.run('--rm -p 8089:80') 
                 }
             }
         }
