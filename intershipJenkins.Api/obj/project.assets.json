@@ -1294,19 +1294,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\belha\\.nuget\\packages\\": {}
+    "C:\\Users\\windows 1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj",
+      "projectUniqueName": "C:\\Users\\windows 1\\Documents\\GitHub\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj",
       "projectName": "intershipJenkins.Api",
-      "projectPath": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj",
-      "packagesPath": "C:\\Users\\belha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\belha\\OneDrive\\Bureau\\intershipJenkins\\intershipJenkins\\intershipJenkins.Api\\obj\\",
+      "projectPath": "C:\\Users\\windows 1\\Documents\\GitHub\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj",
+      "packagesPath": "C:\\Users\\windows 1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\windows 1\\Documents\\GitHub\\intershipJenkins\\intershipJenkins.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\belha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\windows 1\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1326,6 +1326,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -1364,7 +1369,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

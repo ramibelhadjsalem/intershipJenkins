@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "intershipJenkins.Api", "int
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "intershipJenkins.Tests", "intershipJenkins.Tests\intershipJenkins.Tests.csproj", "{3407193D-5E28-4E07-BAFB-5F1040172E62}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "intershipJenkins.IntegrationTests", "IntegrationTests\intershipJenkins.IntegrationTests.csproj", "{748F2EFB-B444-4903-A50A-82099EB2EBCA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{3407193D-5E28-4E07-BAFB-5F1040172E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3407193D-5E28-4E07-BAFB-5F1040172E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3407193D-5E28-4E07-BAFB-5F1040172E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748F2EFB-B444-4903-A50A-82099EB2EBCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748F2EFB-B444-4903-A50A-82099EB2EBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748F2EFB-B444-4903-A50A-82099EB2EBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748F2EFB-B444-4903-A50A-82099EB2EBCA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
