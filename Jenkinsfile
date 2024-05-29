@@ -23,7 +23,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Run tests using dotnet test
-                bat 'dotnet test'
+                sh 'dotnet test'
             }
         }
 
