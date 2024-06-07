@@ -20,9 +20,45 @@ namespace intershipJenkins.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<Book>>> Get()
+        public async ActionResult<List<Book>> Get()
         {
-          return Ok(await _booksService.listAsync());
+            var books = new List<Book>
+            {
+                new Book 
+                { 
+                    Title = "1984", 
+                    Price = 9.99M, 
+                    Category = "Dystopian", 
+                    Author = "George Orwell",
+                    CreatedAt = DateTime.UtcNow,
+                    UpdateAt = DateTime.UtcNow,
+                    DeletedAt = DateTime.UtcNow.AddYears(1),
+                    Enabeled = true
+                },
+                new Book 
+                { 
+                    Title = "To Kill a Mockingbird", 
+                    Price = 7.99M, 
+                    Category = "Fiction", 
+                    Author = "Harper Lee",
+                    CreatedAt = DateTime.UtcNow,
+                    UpdateAt = DateTime.UtcNow,
+                    DeletedAt = DateTime.UtcNow.AddYears(1),
+                    Enabeled = true
+                },
+                new Book 
+                { 
+                    Title = "The Great Gatsby", 
+                    Price = 10.99M, 
+                    Category = "Classic", 
+                    Author = "F. Scott Fitzgerald",
+                    CreatedAt = DateTime.UtcNow,
+                    UpdateAt = DateTime.UtcNow,
+                    DeletedAt = DateTime.UtcNow.AddYears(1),
+                    Enabeled = true
+                }
+            };
+          return Ok(books);
         }
            
 
