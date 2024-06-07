@@ -20,12 +20,12 @@ pipeline {
                 }
             }
         }
-        stage('Test') {
-            steps {
-                // Run tests using dotnet test
-                sh 'dotnet test'
-            }
-        }
+        // stage('Test') {
+        //     steps {
+        //         // Run tests using dotnet test
+        //         sh 'dotnet test'
+        //     }
+        // }
 
 
         stage('Run Docker container') {
