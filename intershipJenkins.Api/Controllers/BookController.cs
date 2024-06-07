@@ -20,37 +20,37 @@ namespace intershipJenkins.Api.Controllers
         }
 
         [HttpGet]
-        public async ActionResult<List<Book>> GetAll()
+        public ActionResult<List<Book>> GetAll()
         {
             var books = new List<Book>
             {
-                new Book 
-                { 
-                    Title = "1984", 
-                    Price = 9.99M, 
-                    Category = "Dystopian", 
+                new Book
+                {
+                    Title = "1984",
+                    Price = 9.99M,
+                    Category = "Dystopian",
                     Author = "George Orwell",
                     CreatedAt = DateTime.UtcNow,
                     UpdateAt = DateTime.UtcNow,
                     DeletedAt = DateTime.UtcNow.AddYears(1),
                     Enabeled = true
                 },
-                new Book 
-                { 
-                    Title = "To Kill a Mockingbird", 
-                    Price = 7.99M, 
-                    Category = "Fiction", 
+                new Book
+                {
+                    Title = "To Kill a Mockingbird",
+                    Price = 7.99M,
+                    Category = "Fiction",
                     Author = "Harper Lee",
                     CreatedAt = DateTime.UtcNow,
                     UpdateAt = DateTime.UtcNow,
                     DeletedAt = DateTime.UtcNow.AddYears(1),
                     Enabeled = true
                 },
-                new Book 
-                { 
-                    Title = "The Great Gatsby", 
-                    Price = 10.99M, 
-                    Category = "Classic", 
+                new Book
+                {
+                    Title = "The Great Gatsby",
+                    Price = 10.99M,
+                    Category = "Classic",
                     Author = "F. Scott Fitzgerald",
                     CreatedAt = DateTime.UtcNow,
                     UpdateAt = DateTime.UtcNow,
@@ -58,9 +58,9 @@ namespace intershipJenkins.Api.Controllers
                     Enabeled = true
                 }
             };
-          return Ok(books);
+            return Ok(books);
         }
-           
+
 
         [HttpGet("{id:length(24)}")]
         public async Task<ActionResult<Book>> Get(string id)

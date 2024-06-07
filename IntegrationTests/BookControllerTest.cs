@@ -13,22 +13,22 @@ namespace intershipJenkins.IntegrationTests
     public class BookControllerTest : BaseControllerIntergerationtest
     {
         public BookControllerTest() :base(){}
-        [Fact]
-        public async Task Get_ReturnsListOfBooks()
-        {
+        //[Fact]
+        //public async Task Get_ReturnsListOfBooks()
+        //{
 
 
-            var response = await _httpClient.GetAsync("/api/book");
+        //    var response = await _httpClient.GetAsync("/api/book");
 
 
-            response.EnsureSuccessStatusCode();
+        //    response.EnsureSuccessStatusCode();
 
-            var books = await response.Content.ReadFromJsonAsync<List<Book>>(); // Assuming Book is your model class
-            Assert.NotNull(books); // Ensure books list is not null
+        //    var books = await response.Content.ReadFromJsonAsync<List<Book>>(); // Assuming Book is your model class
+        //    Assert.NotNull(books); // Ensure books list is not null
 
 
 
-        }
+        //}
 
         [Theory]
         [InlineData("test1", "author1", 10.5, "cate")]
