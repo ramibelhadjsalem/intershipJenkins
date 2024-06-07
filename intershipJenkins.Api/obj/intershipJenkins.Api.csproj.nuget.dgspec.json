@@ -1,27 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\windows 1\\Documents\\GitHub\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj": {}
+    "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\windows 1\\Documents\\GitHub\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj": {
+    "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\windows 1\\Documents\\GitHub\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj",
+        "projectUniqueName": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj",
         "projectName": "intershipJenkins.Api",
-        "projectPath": "C:\\Users\\windows 1\\Documents\\GitHub\\intershipJenkins\\intershipJenkins.Api\\intershipJenkins.Api.csproj",
-        "packagesPath": "C:\\Users\\windows 1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\windows 1\\Documents\\GitHub\\intershipJenkins\\intershipJenkins.Api\\obj\\",
+        "projectPath": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj",
+        "packagesPath": "/Users/MAC/.nuget/packages/",
+        "outputPath": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\windows 1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/MAC/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "/usr/local/share/dotnet/sdk/7.0.316/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,11 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -77,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.316/RuntimeIdentifierGraph.json"
         }
       }
     }

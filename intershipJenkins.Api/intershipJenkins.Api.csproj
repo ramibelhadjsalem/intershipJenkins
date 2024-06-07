@@ -15,7 +15,7 @@
   </ItemGroup>
 
 	<ItemGroup>
-		<InternalsVisibleTo Include="intershipJenkins.Integrationtests"/>
+		<InternalsVisibleTo Include="intershipJenkins.Integrationtests" />
 	</ItemGroup>
 
 </Project>

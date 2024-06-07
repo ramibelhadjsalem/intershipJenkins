@@ -20,7 +20,7 @@ namespace intershipJenkins.Api.Controllers
         }
 
         [HttpGet]
-        public async ActionResult<List<Book>> Get()
+        public async ActionResult<List<Book>> GetAll()
         {
             var books = new List<Book>
             {

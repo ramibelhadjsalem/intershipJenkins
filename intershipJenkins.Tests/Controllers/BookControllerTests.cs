@@ -34,7 +34,7 @@ namespace intershipJenkins.Tests.Controllers
             var controller = new BookController(mockBooksService.Object);
 
             // Act
-            var result = await controller.Get();
+            var result = controller.GetAll();
 
             // Assert
             var okResult = Assert.IsType<OkObjectResult>(result.Result);
