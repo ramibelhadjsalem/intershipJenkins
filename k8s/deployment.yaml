@@ -1,24 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dotnet-app
-  labels:
-    app: dotnet-app
+  name: myapp
 spec:
-  replicas: 3
   selector:
     matchLabels:
-      app: dotnet-app
+      app: myapp
+  replicas: 2
   template:
     metadata:
       labels:
-        app: dotnet-app
+        app: myapp
     spec:
       containers:
-      - name: dotnet-app
-        image: your-dockerhub-username/your-dotnet-app:latest
+      - name: myapp
+        image: ramibhs/intership-jenkins:latest
         ports:
         - containerPort: 80
-        env:
-        - name: ASPNETCORE_ENVIRONMENT
-          value: "Production"
