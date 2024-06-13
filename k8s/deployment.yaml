@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: ramibhs/intership:1.1
+        image: ramibhs/intership:1.4
         ports:
         - containerPort: 80
 
