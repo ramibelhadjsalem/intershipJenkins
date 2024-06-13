@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: dotnet-app
-        image: your-dockerhub-username/your-dotnet-app:latest
+        image: ramibhs/intership-jenkins:latest
         ports:
         - containerPort: 80
         env:
