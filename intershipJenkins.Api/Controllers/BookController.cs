@@ -22,7 +22,7 @@ namespace intershipJenkins.Api.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Book>>> GetAll()
         {
-            var books = await _booksService.listAsync()
+            var books = await _booksService.listAsync();
             return Ok(books);
         }
 
