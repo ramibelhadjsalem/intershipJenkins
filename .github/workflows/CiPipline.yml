@@ -26,25 +26,7 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '6.0.x'
-
-    - name: Cache SonarQube packages
-      uses: actions/cache@v3
-      with:
-        path: ~/.sonar/cache
-        key: ${{ runner.os }}-sonar
-
-   
-
-    - name: Analyze code with SonarQube
-      env:
-        SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
-      run: |
-        dotnet tool install --global dotnet-sonarscanner
-        export PATH="$PATH:~/.dotnet/tools"
-        dotnet sonarscanner begin /k:"myapp" /d:sonar.host.url="${{ secrets.SONARQUBE_HOST_URL }}" /d:sonar.login="${{ secrets.SONARQUBE_TOKEN }}"
-        dotnet build
-        dotnet sonarscanner end /d:sonar.login="${{ secrets.SONARQUBE_TOKEN }}"
-
+        
     - name: Build Docker image
       run: |
         docker build -t ramibhs/intership:${{ github.sha }} .
