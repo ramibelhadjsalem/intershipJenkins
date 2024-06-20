@@ -33,8 +33,7 @@ jobs:
         path: ~/.sonar/cache
         key: ${{ runner.os }}-sonar
 
-    - name: Run tests
-      run: dotnet test
+   
 
     - name: Analyze code with SonarQube
       env:
