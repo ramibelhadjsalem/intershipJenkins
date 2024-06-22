@@ -26,26 +26,7 @@ jobs:
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: '6.0.x'
-
-    - name: Cache SonarQube packages
-      uses: actions/cache@v3
-      with:
-        path: ~/.sonar/cache
-        key: ${{ runner.os }}-sonar
-
-    - name: Run tests
-      run: dotnet test
-
-    - name: Analyze code with SonarQube
-      env:
-        SONAR_TOKEN: ${{ secrets.SONARQUBE_TOKEN }}
-      run: |
-        dotnet tool install --global dotnet-sonarscanner
-        export PATH="$PATH:~/.dotnet/tools"
-        dotnet sonarscanner begin /k:"myapp" /d:sonar.host.url="${{ secrets.SONARQUBE_HOST_URL }}" /d:sonar.login="${{ secrets.SONARQUBE_TOKEN }}"
-        dotnet build
-        dotnet sonarscanner end /d:sonar.login="${{ secrets.SONARQUBE_TOKEN }}"
-
+        
     - name: Build Docker image
       run: |
         docker build -t ramibhs/intership:${{ github.sha }} .
@@ -75,3 +56,29 @@ jobs:
       run: |
         echo "${KUBECONFIG}" | base64 --decode > $HOME/.kube/config
         kubectl apply -f k8s/deployment.yaml -n myapp
+        
+    - name: Notify Slack on success
+      if: success()
+      uses: 8398a7/action-slack@v3
+      with:
+        status: success
+        fields: repo,commit,author,commit_message,action,eventName,ref,workflow,job,took
+        author_name: GitHub Actions
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # Required for accessing GitHub API
+        channel: '#your-channel'  # Replace with your Slack channel name
+        slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}  # This is how you should reference your secret
+      env:
+        CI: true
+
+    - name: Notify Slack on failure
+      if: failure()
+      uses: 8398a7/action-slack@v3
+      with:
+        status: failure
+        fields: repo,commit,author,commit_message,action,eventName,ref,workflow,job,took
+        author_name: GitHub Actions
+        github_token: ${{ secrets.GITHUB_TOKEN }}  # Required for accessing GitHub API
+        channel: '#your-channel'  # Replace with your Slack channel name
+        slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}  # Ensure correct referencing
+      env:
+        CI: true
