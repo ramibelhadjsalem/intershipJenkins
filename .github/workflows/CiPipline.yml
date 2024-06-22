@@ -43,7 +43,7 @@ jobs:
       
     - name: Update image tag in deploy.yaml
       run: |
-          sed -i 's|image: myrepo/myapp:.*|image: myrepo/myapp:${{ github.sha }}|' k8s/deployment.yaml
+          sed -i 's|image: .*/.*/jenkins:.*|image: myrepo/myapp:${{ github.sha }}|' k8s/deployment.yaml
           echo "Modified deploy.yaml:"
           cat k8s/deployment.yaml
           git config --global user.name 'github-actions[bot]'
