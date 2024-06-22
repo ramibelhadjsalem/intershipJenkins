@@ -52,6 +52,7 @@ jobs:
         targetBranch: master
         createPR: false
         message: 'Update deployment image to ramibhs/jenkins:${{ github.sha }}'
+        token: ${{ secrets.TOKEN }}
         
     - name: Display deploy.yaml after modification
       run: cat k8s/deployment.yaml
