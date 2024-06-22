@@ -73,6 +73,7 @@ jobs:
       - name: Send notification to Slack via webhook
         uses: slackapi/slack-github-action@v1.26.0
         with:
+          channel-id: 'general'
           payload: |
                   {
                     "text": "GitHub Action build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}",
