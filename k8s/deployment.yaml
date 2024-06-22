@@ -13,8 +13,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - name: myapp
-        image: ramibhs/jenkins:1.5
-        ports:
-        - containerPort: 80
-
+        - name: myapp
+          image: ramibhs/jenkins:6a5ea82a6bc205e7901c4f9b2df02f71b9bb8a39
+          ports:
+            - containerPort: 80
