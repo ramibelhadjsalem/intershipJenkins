@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LD1Ez57iyhsERf+3aA/BJBCfQynDWbuzlYDgXjcF74Gk59H94eULP4T4Z5tmxXePB2LAfOJeIhYTwFnA5UWwiQ==",
+  "dgSpecHash": "XZTF7QIrpAhHHhiX016mJX4WQTASOL0bYPDexj7/PFrkM3i5OiUn2PSdT01dkIBDbBXXnIJKh5/zN/+hWt19JA==",
   "success": true,
-  "projectFilePath": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj",
+  "projectFilePath": "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj",
   "expectedPackageFiles": [
     "/Users/MAC/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/MAC/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj": {}
+    "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj": {}
   },
   "projects": {
-    "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj": {
+    "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj",
+        "projectUniqueName": "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj",
         "projectName": "intershipJenkins.Api",
-        "projectPath": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj",
+        "projectPath": "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj",
         "packagesPath": "/Users/MAC/.nuget/packages/",
-        "outputPath": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/obj/",
+        "outputPath": "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/MAC/.nuget/NuGet/NuGet.Config"

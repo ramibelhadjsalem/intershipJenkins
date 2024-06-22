@@ -6903,11 +6903,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Tests/intershipJenkins.Tests.csproj",
+      "projectUniqueName": "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Tests/intershipJenkins.Tests.csproj",
       "projectName": "intershipJenkins.Tests",
-      "projectPath": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Tests/intershipJenkins.Tests.csproj",
+      "projectPath": "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Tests/intershipJenkins.Tests.csproj",
       "packagesPath": "/Users/MAC/.nuget/packages/",
-      "outputPath": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Tests/obj/",
+      "outputPath": "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/MAC/.nuget/NuGet/NuGet.Config"
@@ -6922,8 +6922,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj": {
-              "projectPath": "/Users/MAC/Projects/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj"
+            "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj": {
+              "projectPath": "/Users/MAC/Documents/GitHub/intershipJenkins/intershipJenkins.Api/intershipJenkins.Api.csproj"
             }
           }
         }
