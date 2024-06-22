@@ -64,8 +64,8 @@ jobs:
         status: success
         fields: repo,commit,author,commit_message,action,eventName,ref,workflow,job,took
         author_name: GitHub Actions
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # Required for accessing GitHub API
-        channel: '#your-channel'  # Replace with your Slack channel name
+        github_token: ${{ secrets.TOKEN }}  # Required for accessing GitHub API
+        channel: '#general'  # Replace with your Slack channel name
         slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}  # This is how you should reference your secret
       env:
         CI: true
@@ -77,8 +77,8 @@ jobs:
         status: failure
         fields: repo,commit,author,commit_message,action,eventName,ref,workflow,job,took
         author_name: GitHub Actions
-        github_token: ${{ secrets.GITHUB_TOKEN }}  # Required for accessing GitHub API
-        channel: '#your-channel'  # Replace with your Slack channel name
+        github_token: ${{ secrets.TOKEN }}  # Required for accessing GitHub API
+        channel: '#general'  # Replace with your Slack channel name
         slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}  # Ensure correct referencing
       env:
         CI: true
