@@ -56,13 +56,6 @@ jobs:
         
     - name: Display deploy.yaml after modification
       run: cat k8s/deployment.yaml
-
-    - name: Apply Kubernetes deployment
-      env:
-        KUBECONFIG: ${{ secrets.KUBE_CONFIG_DATA }}
-      run: |
-        echo "${KUBECONFIG}" | base64 --decode > $HOME/.kube/config
-        kubectl apply -f k8s/deployment.yaml -n myapp
         
   send-slack-notification:
     runs-on: ubuntu-latest
