@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: myapp
-          image: ramibhs/jenkins:6a5ea82a6bc205e7901c4f9b2df02f71b9bb8a39
+          image: ramibhs/jenkins:5c632023b418f776be376e9fbb24bc71946f1e81
           ports:
             - containerPort: 80
