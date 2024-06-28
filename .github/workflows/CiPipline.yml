@@ -36,7 +36,7 @@ jobs:
       run: echo ${{ secrets.DOCKER_HUB_PASSWORD }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
 
     - name: Push Docker image to Docker Hub
-      run: docker push ramibhs/intership:${{ github.sha }}
+      run: docker push ramibhs/jenkins:${{ github.sha }}
       
     - name: Display deploy.yaml before modification
       run: cat k8s/deployment.yaml
