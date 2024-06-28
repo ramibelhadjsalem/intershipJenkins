@@ -29,7 +29,7 @@ jobs:
         
     - name: Build Docker image
       run: |
-        docker build -t ramibhs/intership:${{ github.sha }} .
+        docker buildx build --platform linux/amd64 -t ramibhs/intership:${{ github.sha }} .
         echo "DOCKER_IMAGE=ramibhs/intership:${{ github.sha }}" >> $GITHUB_ENV
 
     - name: Log in to Docker Hub
