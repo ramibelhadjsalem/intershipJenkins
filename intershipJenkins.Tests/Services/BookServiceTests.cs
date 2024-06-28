@@ -22,11 +22,12 @@ namespace intershipJenkins.Tests.Services
         public BookServiceTests()
         {
             _mockCollection = new Mock<IMongoCollection<Book>>();
+            
             var mockDatabaseConfig = new Mock<IOptions<DatabaseConfiguration>>();
             mockDatabaseConfig.Setup(x => x.Value).Returns(new DatabaseConfiguration
             {
-                ConnectionString = "mongodb://localhost:27017",
-                DatabaseName = "TestDatabase"
+                ConnectionString = "mongodb+srv://ramibelhadjsalam:u5SqYkjtIn4jQyZY@cluster0.rhsjf0l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+                DatabaseName = "intership_jenkins"
             });
 
             var mockMongoDatabase = new Mock<IMongoDatabase>();

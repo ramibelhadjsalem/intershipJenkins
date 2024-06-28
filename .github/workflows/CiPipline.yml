@@ -36,7 +36,7 @@ jobs:
       run: echo ${{ secrets.DOCKER_HUB_PASSWORD }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
 
     - name: Push Docker image to Docker Hub
-      run: docker push ramibhs/jenkins:${{ github.sha }}
+      run: docker push ramibhs/intership:${{ github.sha }}
       
     - name: Display deploy.yaml before modification
       run: cat k8s/deployment.yaml
@@ -46,12 +46,12 @@ jobs:
       with:
         valueFile: 'k8s/deployment.yaml'
         propertyPath: 'spec.template.spec.containers[0].image'
-        value: ramibhs/jenkins:${{ github.sha }}
+        value: ramibhs/intership:${{ github.sha }}
         commitChange: false
         branch: master
         targetBranch: master
         createPR: false
-        message: 'Update deployment image to ramibhs/jenkins:${{ github.sha }}'
+        message: 'Update deployment image to ramibhs/intership:${{ github.sha }}'
         token: ${{ secrets.TOKEN }}
         
     - name: Display deploy.yaml after modification
